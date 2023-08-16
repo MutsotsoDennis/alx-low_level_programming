@@ -2,20 +2,20 @@
 /**
  * main - Entry point
  *
- * Description: Calculates and prints the first 98 Fibonacci numbers.
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int count, n1 = 1, n2 = 2, next;
-printf("%d, %d", n1, n2);
-for (count = 2; count < 98; ++count)
+unsigned int fib1 = 1, fib2 = 2, nextFib;
+int count = 2; // We already have the first two Fibonacci numbers (1 and 2)
+printf("%d, %d", fib1, fib2);
+while (count < 98)
 {
-next = n1 + n2;
-printf(", %d", next);
-n1 = n2;
-n2 = next;
+nextFib = fib1 + fib2;
+printf(", %d", nextFib);
+fib1 = fib2;
+fib2 = nextFib;
+count++;
 }
 printf("\n");
 return (0);
