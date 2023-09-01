@@ -2,12 +2,17 @@
 #include <stdio.h>
 
 /**
- * _puts - Prints a string followed by a new line to stdout.
- * @str: The string to be printed.
+ * _puts - Prints a string to the standard output
+ * @str: The string to be printed
  */
 void _puts(char *str)
 {
-	/* Function implementation here */
+	while (*str)
+	{
+	putchar(*str);
+	str++;
+	}
+	putchar('\n');
 }
 
 /**
