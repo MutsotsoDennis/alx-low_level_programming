@@ -6,7 +6,7 @@
  * @text_content: The thread to add to the end of the file.
  *
  * Return: If function fails or filename is NULL then return - -1.
- *         If the file does'nt exist and the user lacks write permissions then - -1.
+ *         If the file does'nt exist and the user lacks write permission - -1.
  *         else - 1.
  */
 int append_text_to_file(const char *filename, char *text_content)
